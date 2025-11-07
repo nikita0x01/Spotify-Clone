@@ -1,0 +1,360 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Layout */
+.main {
+  display: flex;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.sidebar {
+  width: 340px;
+  background-color: black;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #121212;
+  border-radius: 1rem;
+  overflow: auto;
+  padding: 0 1.5rem;
+}
+
+.music-player {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+}
+
+/* Navigation */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  background-color: #121212;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  padding: 0.5rem 0.75rem;
+}
+
+.nav-options {
+  line-height: 40px;
+  opacity: 0.7;
+  padding: 0.5rem 0.75rem;
+}
+
+.nav-options:hover {
+  opacity: 1;
+}
+
+.nav-options i {
+  font-size: 1.25rem;
+}
+
+.nav-options a {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+/* Library */
+.library {
+  background-color: #121212;
+  border-radius: 1rem;
+  height: 100%;
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lib-options img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.icons {
+  font-size: 1.25rem;
+  display: flex;
+}
+
+.icons i {
+  opacity: 0.6;
+  margin-right: 1rem;
+}
+
+.icons i:hover {
+  opacity: 1;
+}
+
+/* Playlist Boxes */
+.box {
+  background-color: #232323;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.box-p1 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.box-p2 {
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+.badge {
+  background-color: white;
+  color: black;
+  padding: 0.25rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  width: fit-content;
+  height: 2rem;
+  margin-top: 0.5rem;
+}
+
+.dark-badge {
+  background-color: black;
+  color: white;
+}
+
+/* Sticky Header */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  z-index: 10;
+}
+
+.sticky-nav-icons img {
+  height: 1rem;
+  width: 1rem;
+}
+
+.sticky-nav-options {
+  display: flex;
+  align-items: center;
+}
+
+.sticky-nav-options button {
+  margin-right: 1.5rem;
+}
+
+/* Cards Section */
+.card-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #232323;
+  width: 150px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: transform 0.3s;
+  cursor: pointer;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #2e2e2e;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card-info {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.footer {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the line horizontally (optional) */
+  padding: 0 2rem; /* Optional padding */
+}
+
+.line {
+  width: 100%;
+  border-top: 1px solid white;
+  opacity: 0.4;
+}
+
+.music-player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181818;
+  height: 72px;
+  padding: 0 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  color: white;
+}
+
+/* Center player section */
+.player {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.player-control-icon {
+  height: 1rem;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.player-control-icon:hover {
+  opacity: 1;
+}
+
+/* Highlight play icon */
+.player-control-icon:nth-child(3) {
+  height: 2rem;
+  opacity: 1 !important;
+}
+
+/* Playback bar styling */
+.playbackbar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 0.3rem;
+}
+
+.curr-time,
+.tot-time {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.progressbar {
+  flex: 1;
+  appearance: none;
+  height: 4px;
+  background: #404040;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  transition: #404040 0.3s;
+  width: 70%;
+}
+
+.progressbar::-webkit-slider-thumb {
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  background: #1db954;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -4px;
+}
+
+.progressbar::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  background: #1db954;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.progressbar {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #1db954 30%, #404040 30%);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Chrome / Safari */
+.progressbar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  margin-top: -4px;
+  cursor: pointer;
+  box-shadow: 0 0 2px #000;
+}
+
+/* Firefox */
+.progressbar::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+/* For updating the fill dynamically with JS (optional enhancement) */

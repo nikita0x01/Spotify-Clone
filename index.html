@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="logo.png" />
+  
+  <title>Spotify - Web player: Music for everyone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap" 
+        rel="stylesheet" />
+</head>
+<body>
+  <div class="main">
+    <!-- Sidebar -->
+    <div class="sidebar"> 
+      <div class="nav">
+        <div class="nav-options" style="opacity: 1;">
+          <i class="fa-solid fa-house"></i>
+          <a href="#">Home</a>
+        </div>
+        <div class="nav-options">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a href="#">Search</a>
+        </div>
+      </div>
+
+      <!-- Library -->
+      <div class="library">
+        <div class="options">
+          <div class="lib-options nav-options">
+            <img src="library_icon.png" alt="Library Icon" />
+            <a href="#">Your Library</a>
+          </div>
+          <div class="icons">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <div class="lib-box">
+          <div class="box">
+            <p class="box-p1" style="background-color: #232323">Create your first playlist</p>
+            <p class="box-p2" style="background-color: #232323">It's easy, we'll help you</p>
+            <button class="badge">Create Playlist</button>
+          </div>
+          <div class="box">
+            <p class="box-p1" style="background-color: #232323">Let's find some Podcasts to follow</p>
+            <p class="box-p2" style="background-color: #232323">We'll keep you updated on new episodes !</p>
+            <button class="badge">Browse Podcasts</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="sticky-nav">
+        <div class="sticky-nav-icons">
+          <img src="backward_icon.png">
+          <img src="forward_icon.png">
+        </div>
+        <div class="sticky-nav-options">
+          <button class="badge">Explore Premium</button>
+          <button class="badge dark-badge"><i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Install App</button>
+          <i class="fa-regular fa-user"></i>
+        </div> 
+      </div>
+      
+      <h2>Recently Played</h2>
+      <div class="card-container">
+        <div class="card" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+          <img src="card1img.jpeg" class="card-img">
+          <p class="card-title" style="background: #232323;">Top 50 - Global</p>
+          <p class="card-info" style="background: #232323;">Your daily updates of most played tracks</p>
+        </div>
+      </div>
+
+      <h2>Trending now near you</h2>
+      <div class="card-container">
+        <div class="card" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3">
+          <img src="card2img.jpeg" class="card-img">
+          <p class="card-title">Mahiye jinna sohna</p>
+          <p class="card-info">2023 · Darshan Raval</p>
+        </div>
+        <div class="card" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3">
+          <img src="card3img.jpeg" class="card-img">
+          <p class="card-title">Mere Paas Tum Ho</p>
+          <p class="card-info">Rahat Fateh Ali Khan</p>
+        </div>
+        <div class="card" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3">
+          <img src="card4img.jpeg" class="card-img">
+          <p class="card-title">Naa Ready (from Leo)</p>
+          <p class="card-info">Anirudh Ravichander · Super Subu</p>
+        </div>
+        <div class="card" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3">
+          <img src="card2img.jpeg" class="card-img">
+          <p class="card-title">Mahiye jinna sohna (Lofi)</p>
+          <p class="card-info">2023 · Darshan Raval</p>
+        </div>
+        <div class="card" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3">
+          <img src="card3img.jpeg" class="card-img">
+          <p class="card-title">Mere Paas Tum Ho (Acoustic)</p>
+          <p class="card-info">Rahat Fateh Ali Khan</p>
+        </div>
+      </div>
+
+      <h2>Featured for you</h2>
+      <div class="card-container">
+        <div class="card" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3">
+          <img src="card1img.jpeg" class="card-img">
+          <p class="card-title">Top 50 - Global</p>
+          <p class="card-info">Your daily updates of most played tracks</p>
+        </div>
+        <div class="card" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3">
+          <img src="card5img.jpeg" class="card-img">
+          <p class="card-title">Top Songs Global</p>
+          <p class="card-info">Your daily updates of most played weekly tracks</p>
+        </div>
+        <div class="card" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3">
+          <img src="card6img.jpeg" class="card-img">
+          <p class="card-title">Top Songs India</p>
+          <p class="card-info">Your daily updates of most played tracks</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player">
+      <div class="album"></div>
+      <div class="player">
+        <div class="player-controls">
+          <img src="player_icon1.png" class="player-control-icon">
+          <img src="player_icon2.png" class="player-control-icon">
+          <img src="player_icon3.png" class="player-control-icon" style="opacity: 1; font-size:2rem;">
+          <img src="player_icon4.png" class="player-control-icon">
+          <img src="player_icon5.png" class="player-control-icon">
+        </div>
+        <div class="playbackbar">
+          <span class="curr-time">00:00</span>
+          <input type="range" min="0" max="100" class="progressbar" step="1">
+          <span class="tot-time">00:00</span>
+        </div>
+      </div>
+      <div class="contrls"></div>
+
+      <!-- Hidden Audio Player -->
+      <audio id="audio-player" preload="metadata"></audio>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const audio = document.getElementById("audio-player");
+    const playButton = document.querySelectorAll(".player-control-icon")[2];
+    const progressBar = document.querySelector(".progressbar");
+    const currTime = document.querySelector(".curr-time");
+    const totalTime = document.querySelector(".tot-time");
+    const cards = document.querySelectorAll(".card");
+
+    let isPlaying = false;
+    let currentSong = null;
+
+    function formatTime(sec) {
+      const minutes = Math.floor(sec / 60);
+      const seconds = Math.floor(sec % 60);
+      return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+    }
+
+    // Update progress
+    audio.addEventListener("timeupdate", () => {
+      if (audio.duration) {
+        progressBar.value = (audio.currentTime / audio.duration) * 100;
+        currTime.textContent = formatTime(audio.currentTime);
+        totalTime.textContent = formatTime(audio.duration);
+      }
+    });
+
+    // Seek functionality
+    progressBar.addEventListener("input", () => {
+      if (audio.duration) {
+        audio.currentTime = (progressBar.value / 100) * audio.duration;
+      }
+    });
+
+    // Toggle play/pause
+    playButton.addEventListener("click", () => {
+      if (!audio.src) {
+        alert("Please select a song first by clicking a card!");
+        return;
+      }
+      if (isPlaying) {
+        audio.pause();
+      } else {
+        audio.play();
+      }
+    });
+
+    // Handle card clicks
+    cards.forEach(card => {
+      card.addEventListener("click", () => {
+        const songSrc = card.getAttribute("data-src");
+        if (!songSrc) return alert("No audio file linked!");
+        if (currentSong !== songSrc) {
+          currentSong = songSrc;
+          audio.src = songSrc;
+          audio.play();
+        } else {
+          if (isPlaying) audio.pause(); else audio.play();
+        }
+      });
+    });
+
+    // When song starts
+    audio.addEventListener("play", () => {
+      isPlaying = true;
+      playButton.style.opacity = "0.6";
+      playButton.style.transform = "scale(1.1)";
+    });
+
+    // When song pauses
+    audio.addEventListener("pause", () => {
+      isPlaying = false;
+      playButton.style.opacity = "1";
+      playButton.style.transform = "scale(1)";
+    });
+
+    // When song ends
+    audio.addEventListener("ended", () => {
+      isPlaying = false;
+      progressBar.value = 0;
+      currTime.textContent = "00:00";
+    });
+  });// ----------------------------
+// Spotify Clone - script.js
+// ----------------------------
+
+// Wait for the DOM to load
+document.addEventListener("DOMContentLoaded", () => {
+
+  // =============================
+  // Sidebar: Active navigation
+  // =============================
+  const navOptions = document.querySelectorAll(".nav-options");
+
+  navOptions.forEach(option => {
+    option.addEventListener("click", () => {
+      // Remove active state from all
+      navOptions.forEach(opt => opt.style.opacity = "0.6");
+      // Highlight the clicked one
+      option.style.opacity = "1";
+    });
+  });
+
+  // =============================
+  // Sticky Nav Scroll Behavior
+  // =============================
+  const stickyNav = document.querySelector(".sticky-nav");
+  const mainContent = document.querySelector(".main-content");
+
+  mainContent.addEventListener("scroll", () => {
+    if (mainContent.scrollTop > 50) {
+      stickyNav.classList.add("scrolled");
+    } else {
+      stickyNav.classList.remove("scrolled");
+    }
+  });
+
+  // =============================
+  // Music Player Controls
+  // =============================
+  const playButton = document.querySelectorAll(".player-control-icon")[2]; // middle play button
+  const progressBar = document.querySelector(".progressbar");
+  const currTime = document.querySelector(".curr-time");
+  const totalTime = document.querySelector(".tot-time");
+
+  let isPlaying = false;
+  let progress = 0;
+  let interval;
+
+  function formatTime(seconds) {
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+  }
+
+  function startPlayback() {
+    if (isPlaying) return;
+    isPlaying = true;
+    playButton.style.opacity = "0.6";
+    playButton.style.transform = "scale(1.1)";
+    interval = setInterval(() => {
+      if (progress < 100) {
+        progress++;
+        progressBar.value = progress;
+        const elapsed = (progress / 100) * 270; // 4.30 -> 270 sec
+        currTime.textContent = formatTime(elapsed);
+      } else {
+        stopPlayback();
+      }
+    }, 500);
+  }
+
+  function stopPlayback() {
+    isPlaying = false;
+    playButton.style.opacity = "1";
+    playButton.style.transform = "scale(1)";
+    clearInterval(interval);
+  }
+
+  playButton.addEventListener("click", () => {
+    if (isPlaying) {
+      stopPlayback();
+    } else {
+      startPlayback();
+    }
+  });
+
+  // =============================
+  // Progress Bar Drag Functionality
+  // =============================
+  progressBar.addEventListener("input", () => {
+    progress = progressBar.value;
+    const elapsed = (progress / 100) * 270;
+    currTime.textContent = formatTime(elapsed);
+  });
+
+  // =============================
+  // "Create Playlist" and "Browse Podcasts" Buttons
+  // =============================
+  const playlistBtn = document.querySelectorAll(".badge");
+
+  playlistBtn.forEach(btn => {
+    btn.addEventListener("click", () => {
+      alert(`You clicked on "${btn.textContent}"`);
+    });
+  });
+
+  // =============================
+  // Card Hover Effect (Optional JS touch)
+  // =============================
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    card.addEventListener("mouseenter", () => {
+      card.style.transform = "scale(1.05)";
+      card.style.transition = "transform 0.3s ease";
+    });
+    card.addEventListener("mouseleave", () => {
+      card.style.transform = "scale(1)";
+    });
+  });
+
+});
+
+  </script>
+</body>
+</html>
