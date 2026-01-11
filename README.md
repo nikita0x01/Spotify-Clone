@@ -1,7 +1,7 @@
-# Spotify UI Clone — HTML & CSS
+# Spotify UI Clone - HTML & CSS
 
 A responsive Spotify-inspired music player interface built entirely using **HTML** and **CSS**.  
-This project focuses on clean design, pixel-perfect layout, and responsive behavior — no JavaScript required!
+This project focuses on clean design, pixel-perfect layout, and responsive behavior - no JavaScript required!
 
 ---
 
@@ -18,7 +18,7 @@ This project focuses on clean design, pixel-perfect layout, and responsive behav
 
 ##  Tech Stack
 
-- **HTML5** — Semantic structure  
-- **CSS3** — Flexbox, Grid, and custom properties  
-- *(No frameworks or JS used — pure front-end design)*
+- **HTML5** - Semantic structure  
+- **CSS3** - Flexbox, Grid, and custom properties  
+- *(No frameworks or JS used - pure front-end design)*
 
